@@ -1,20 +1,30 @@
-const paragraphElement = document.getElementById("paragraph");
-let numberA = 0;
-let numberB = 0;
+(function(){
+  const paragraphElement = document.getElementById("paragraph");
+  const inputAElement = document.getElementById("inputA");
+  const inputBElement = document.getElementById("inputB");
+  const buttonElement = document.getElementById("button");
 
-function sum(a, b){
-  return a + b;
-}
+  let numberA = 0;
+  let numberB = 0;
 
-function handleAInputChange(target){
-  numberA = +target.value; // dla lepszej czytelności zalecane: Number()
-}
+  function sum(a, b){
+    return a + b;
+  }
 
-function handleBInputChange(target){
-  numberB = +target.value; // Number()
-}
+  function handleAInputChange(event){
+    numberA = +event.target.value; // dla lepszej czytelności zalecane: Number()
+  }
 
-function handleButtonClick(){
-  const sumNumber = sum(numberA, numberB);
-  paragraphElement.innerText = `Suma: ${sumNumber}`
-}
+  function handleBInputChange(event){
+    numberB = +event.target.value; // Number()
+  }
+
+  function handleButtonClick(){
+    const sumNumber = sum(numberA, numberB);
+    paragraphElement.innerText = `Suma: ${sumNumber}`
+  }
+
+  inputAElement.addEventListener('change',handleAInputChange);
+  inputBElement.addEventListener('change',handleBInputChange);
+  buttonElement.addEventListener('click',handleButtonClick);
+})();

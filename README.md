@@ -33,3 +33,5 @@ WarsawJs Workshop#41 - JavaScript basics
 - function
 - kastowanie (np.: +; !; !!)
 - document.getElementById
+- addEventListener
+- IIFE
