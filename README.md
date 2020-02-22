@@ -32,3 +32,4 @@ WarsawJs Workshop#41 - JavaScript basics
 - zmienne
 - function
 - kastowanie (np.: +; !; !!)
+- document.getElementById

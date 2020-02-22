@@ -1,3 +1,4 @@
+const paragraphElement = document.getElementById("paragraph");
 let numberA = 0;
 let numberB = 0;
 
@@ -15,5 +16,5 @@ function handleBInputChange(target){
 
 function handleButtonClick(){
   const sumNumber = sum(numberA, numberB);
-  console.log(sumNumber);
+  paragraphElement.innerText = `Suma: ${sumNumber}`
 }
