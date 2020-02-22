@@ -31,3 +31,4 @@ WarsawJs Workshop#41 - JavaScript basics
 - console.log
 - zmienne
 - function
+- kastowanie (np.: +; !; !!)
