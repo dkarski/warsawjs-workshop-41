@@ -34,3 +34,4 @@ WarsawJs Workshop#41 - JavaScript basics
 - document.body.innerHTML
 - document.getElementById
 - document.getElementById
+- Template strings
