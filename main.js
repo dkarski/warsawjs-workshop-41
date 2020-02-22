@@ -1,1 +1,3 @@
-console.log("Witaj Świecie!")
+function handleYesOnClick(){
+  document.body.innerHTML = "Świetnie!"
+}

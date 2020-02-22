@@ -27,6 +27,9 @@ WarsawJs Workshop#41 - JavaScript basics
 - stylesheet link tag
 - script tag
 - kolejność skryptu
+- attribute onclick
 
 ## JS
 - console.log
+- document.body.innerHTML
+- document.getElementById
