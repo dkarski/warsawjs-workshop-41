@@ -33,3 +33,4 @@ WarsawJs Workshop#41 - JavaScript basics
 - console.log
 - document.body.innerHTML
 - document.getElementById
+- document.getElementById

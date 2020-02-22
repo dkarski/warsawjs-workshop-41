@@ -1,3 +1,5 @@
+const appElement = document.getElementById("app");
+
 function handleYesOnClick(){
-  document.body.innerHTML = "Świetnie!"
+  appElement.innerHTML = "Świetnie!";
 }
