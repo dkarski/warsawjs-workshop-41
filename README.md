@@ -38,3 +38,4 @@ WarsawJs Workshop#41 - JavaScript basics
 - increment operator
 - array
 - loop
+- object

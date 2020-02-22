@@ -4,6 +4,11 @@ let isDone;
 let count = 0;
 let comboCount = 0;
 
+function getDate(){
+  const date = new Date();
+  return `${date.toDateString()} ${date.toLocaleTimeString()}`
+}
+
 function handleHomeLinkClick() {
   isDone = undefined;
   render();
@@ -13,14 +18,20 @@ function handleYesOnClick() {
   count++;
   comboCount++;
   isDone = true;
-  eventList.push("powiodło się!");
+  eventList.push({
+    text: "powiodło się!",
+    date: getDate()
+  });
   render();
 }
 
 function handleNoOnClick() {
   isDone = false;
   comboCount = 0;
-  eventList.push("nie powiodło się");
+  eventList.push({
+    text: "nie powiodło się",
+    date: getDate()
+  });
   render();
 }
 
@@ -64,7 +75,7 @@ function renderCountElement() {
 function renderEventsElement() {
   let eventsElement = `<ul>`
   for (let i = 0; i < eventList.length; i++) {
-    eventsElement += `<li>${eventList[i]}</li>`
+    eventsElement += `<li><span>${eventList[i].date}</span> <span>${eventList[i].text}</span></li>`
   }
   eventsElement += `</ul>`;
   return eventsElement
