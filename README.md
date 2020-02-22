@@ -14,3 +14,9 @@ WarsawJs Workshop#41 - JavaScript basics
 - HTML lang en
 - title tag
 - Meta tags: viewport, description, UTF-8
+- stylesheet link tag
+- script tag
+- kolejność skryptu
+
+## JS
+- console.log
