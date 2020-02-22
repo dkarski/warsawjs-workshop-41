@@ -13,4 +13,4 @@ WarsawJs Workshop#41 - JavaScript basics
 - !DOCTYPE html5
 - HTML lang en
 - title tag
-- Meta tags: viewport, description
+- Meta tags: viewport, description, UTF-8
