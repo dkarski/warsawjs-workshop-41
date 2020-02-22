@@ -1,4 +1,5 @@
 const appElement = document.getElementById("app");
+const eventList = [];
 let isDone;
 let count = 0;
 let comboCount = 0;
@@ -12,12 +13,14 @@ function handleYesOnClick() {
   count++;
   comboCount++;
   isDone = true;
+  eventList.push("powiodło się!");
   render();
 }
 
 function handleNoOnClick() {
   isDone = false;
   comboCount = 0;
+  eventList.push("nie powiodło się");
   render();
 }
 
@@ -58,16 +61,27 @@ function renderCountElement() {
   }
 }
 
+function renderEventsElement() {
+  let eventsElement = `<ul>`
+  for (let i = 0; i < eventList.length; i++) {
+    eventsElement += `<li>${eventList[i]}</li>`
+  }
+  eventsElement += `</ul>`;
+  return eventsElement
+}
+
 function renderAppElement() {
   const textElement = renderTextElement();
   const buttonsElement = renderButtonsElement();
   const countElement = renderCountElement();
+  const eventsElement = renderEventsElement();
 
   return `
       <a onclick="handleHomeLinkClick()">Habits</a>
       ${textElement}
       ${buttonsElement}
       ${countElement}
+      ${eventsElement}
     `
 }
 

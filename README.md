@@ -35,3 +35,6 @@ WarsawJs Workshop#41 - JavaScript basics
 - document.getElementById
 - document.getElementById
 - Template strings
+- increment operator
+- array
+- loop
