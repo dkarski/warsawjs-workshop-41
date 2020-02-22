@@ -1,7 +1,9 @@
 const appElement = document.getElementById("app");
 let isDone;
+let count = 0;
 
 function handleYesOnClick() {
+  count++;
   isDone = true;
   render();
 }
@@ -37,14 +39,26 @@ function renderButtonsElement() {
   }
 }
 
+function renderCountElement() {
+  if (isDone === undefined) {
+    return ""
+  } else {
+    return `
+        <p>${count}</p>
+    `
+  }
+}
+
 function renderAppElement() {
   const textElement = renderTextElement();
   const buttonsElement = renderButtonsElement();
+  const countElement = renderCountElement();
 
   return `
       <a href="">Habits</a>
       ${textElement}
       ${buttonsElement}
+      ${countElement}
     `
 }
 
