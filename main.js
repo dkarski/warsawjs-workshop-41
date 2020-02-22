@@ -1,6 +1,7 @@
 const appElement = document.getElementById("app");
 let isDone;
 let count = 0;
+let comboCount = 0;
 
 function handleHomeLinkClick() {
   isDone = undefined;
@@ -9,12 +10,14 @@ function handleHomeLinkClick() {
 
 function handleYesOnClick() {
   count++;
+  comboCount++;
   isDone = true;
   render();
 }
 
 function handleNoOnClick() {
   isDone = false;
+  comboCount = 0;
   render();
 }
 
@@ -49,7 +52,8 @@ function renderCountElement() {
     return ""
   } else {
     return `
-        <p>${count}</p>
+        <p>Zrealizowałem: ${count}</p>
+        <p>"Dobra passa": ${comboCount}</p>
     `
   }
 }
