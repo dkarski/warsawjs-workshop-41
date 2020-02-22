@@ -10,3 +10,7 @@ WarsawJs Workshop#41 - JavaScript basics
 - znacznik HTML
 - znacznik Body
 - znacznik Head
+- !DOCTYPE html5
+- HTML lang en
+- title tag
+- Meta tags: viewport, description
