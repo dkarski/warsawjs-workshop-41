@@ -2,6 +2,11 @@ const appElement = document.getElementById("app");
 let isDone;
 let count = 0;
 
+function handleHomeLinkClick() {
+  isDone = undefined;
+  render();
+}
+
 function handleYesOnClick() {
   count++;
   isDone = true;
@@ -55,7 +60,7 @@ function renderAppElement() {
   const countElement = renderCountElement();
 
   return `
-      <a href="">Habits</a>
+      <a onclick="handleHomeLinkClick()">Habits</a>
       ${textElement}
       ${buttonsElement}
       ${countElement}
