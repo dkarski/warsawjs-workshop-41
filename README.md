@@ -8,7 +8,11 @@ WarsawJs Workshop#41 - JavaScript basics
     - Wykonaj działanie arytmetyczne wykorzystując język javascript
     - Zamknij działanie arytmetyczne w blok funkcji
     - Niech funkcja pozwoli wykonać działanie arytmetyczne z wykorzystaniem argumentów
-
+3. Zaimplementuj funkcje z wykorzystaniem elementów dom
+    - zwróć uwagę na zwracany typ przez input
+    - obsłuż puste wartości
+    - spróbuj ukryć globalnych deklaracji
+    
 ## What did I learned?
 - definicja HTML
 - znacznik HTML
