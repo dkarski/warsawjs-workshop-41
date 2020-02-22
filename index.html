@@ -9,9 +9,9 @@
 </head>
 <body>
 <div>
-    Liczba A: <input type="text">
-    Liczba B: <input type="text">
-    <button>wylicz!</button>
+    Liczba A: <input type="text" onchange="handleAInputChange(this)">
+    Liczba B: <input type="text" onchange="handleBInputChange(this)">
+    <button onclick="handleButtonClick()">wylicz!</button>
     <p>Suma: </p>
 </div>
 <script src="main.js"></script>

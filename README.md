@@ -25,6 +25,7 @@ WarsawJs Workshop#41 - JavaScript basics
 - stylesheet link tag
 - script tag
 - kolejność skryptu
+- attribute onchange, onclick
 
 ## JS
 - console.log
